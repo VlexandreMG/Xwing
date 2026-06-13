@@ -1,18 +1,8 @@
-#include "raylib.h"
+#include "Jeu.hpp" // Classe principale qui lance le jeu
 
 int main()
 {
-    InitWindow(800, 600, "Xwing");
-    SetTargetFPS(60);
-
-    while (!WindowShouldClose())
-    {
-        BeginDrawing();
-        ClearBackground(RAYWHITE);
-        DrawText("Raylib est integre au projet !", 190, 280, 20, DARKGRAY);
-        EndDrawing();
-    }
-
-    CloseWindow();
-    return 0;
+    Jeu jeu;     // Cree une instance du jeu (fenetre + scene)
+    jeu.lancer(); // Demarre la boucle principale
+    return 0;    // Fin du programme
 }

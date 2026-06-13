@@ -4,11 +4,13 @@ project(Xwing VERSION 0.1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Raylib embarqué dans le projet (dossier external/raylib)
-set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
-set(BUILD_GAMES OFF CACHE BOOL "" FORCE)
+find_package(SFML 2.5 COMPONENTS system window graphics REQUIRED)
 
-add_subdirectory(external/raylib)
-
-add_executable(xwing src/main.cpp)
-target_link_libraries(xwing PRIVATE raylib)
+add_executable(xwing
+    src/main.cpp
+    src/Fenetre.cpp
+    src/SceneAccueil.cpp
+    src/Jeu.cpp
+)
+target_include_directories(xwing PRIVATE src)
+target_link_libraries(xwing PRIVATE sfml-system sfml-window sfml-graphics)
