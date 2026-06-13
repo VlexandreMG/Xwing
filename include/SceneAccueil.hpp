@@ -17,6 +17,4 @@ public:
 
 private:
     sf::Color couleurFond_;       // Couleur de fond (bleu fonce)
-    sf::CircleShape cercle_;      // Cercle orange au centre
-    sf::RectangleShape barre_;    // Barre grise en bas de l'ecran
 };
