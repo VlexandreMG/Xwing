@@ -56,7 +56,8 @@ private:
     sf::RenderWindow fenetre_; // Objet fenetre SFML (membre de la classe)
 };
 ```
-    - Que signifie pragma once 
+    - Que signifie pragma once *à tester s'il n'y a pas le pragma once*
+        ->  Il lit dans fenetre.hpp puis quand il va lire Jeu.hpp , il verra le include de fenetre.hpp et il va dire que : "ohh je l'ai déja lue , plus besoin de lire "
     - Explique "std::" 
         -> Signifie standard , otrn hoe tiroir dia misy string 
     - Explique "sf::"
@@ -66,3 +67,5 @@ private:
         -> Classe pour faire apparaître une fenêtre noire 
             -> Window communique avec mon OS 
             -> Render , c'est l'ardoise où je met des trucs . 
+    - Explication du const 
+        -> const veut dire constante donc personne ne peut changer la valeur qu'elle possède
