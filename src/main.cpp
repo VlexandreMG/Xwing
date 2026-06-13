@@ -1,4 +1,4 @@
-#include "Jeu.hpp" // Classe principale qui lance le jeu
+#include "../include/Jeu.hpp" // Classe principale qui lance le jeu
 
 int main()
 {

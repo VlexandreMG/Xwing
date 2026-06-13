@@ -1,4 +1,4 @@
-#include "SceneAccueil.hpp" // Declaration de la classe SceneAccueil
+#include "../include/SceneAccueil.hpp" // Declaration de la classe SceneAccueil
 
 SceneAccueil::SceneAccueil()
     : couleurFond_(20, 30, 60),  // Couleur de fond : bleu fonce (R, G, B)

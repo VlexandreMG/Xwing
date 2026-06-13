@@ -1,4 +1,4 @@
-#include "Fenetre.hpp" // Declaration de la classe Fenetre
+#include "../include/Fenetre.hpp" // Declaration de la classe Fenetre
 
 Fenetre::Fenetre(unsigned int largeur, unsigned int hauteur, const std::string& titre)
     : fenetre_(sf::VideoMode(largeur, hauteur, 32), titre) // Initialise la fenetre avec le mode video

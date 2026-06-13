@@ -1,4 +1,4 @@
-#include "Jeu.hpp" // Declaration de la classe Jeu
+#include "../include/Jeu.hpp" // Declaration de la classe Jeu
 
 Jeu::Jeu()
     : fenetre_(800, 600, "Xwing"), // Cree une fenetre 800x600 intitulee "Xwing"
